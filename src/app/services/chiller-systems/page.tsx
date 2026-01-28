@@ -4,34 +4,44 @@ import Link from "next/link";
 export default function ChillerSystemsPage() {
   const features = [
     {
-      title: "High Efficiency",
-      description: "Advanced compressor technology and heat exchangers deliver superior energy performance and reduced operating costs.",
-      icon: "⚡",
+      title: "Advanced Twin-Rotor Screw Compressor",
+      description: "Semi-hermetic compressor with optimized 5-6 teeth profile design for high volumetric efficiency, smooth operation, and minimal refrigerant leakage.",
+      icon: "⚙️",
     },
     {
-      title: "Modular Design",
-      description: "Scalable capacity to match your cooling requirements with flexible configuration options.",
-      icon: "🔧",
+      title: "Enclosed Motor Design",
+      description: "Motor positioned at compressor gas inlet with refrigerant cooling ensures full motor cooling without heat dissipation concerns.",
+      icon: "🔌",
     },
     {
-      title: "Reliable Operation",
-      description: "Industrial-grade components ensure continuous performance in demanding environments.",
-      icon: "✓",
+      title: "Flooded Evaporator",
+      description: "High-efficiency design with optimized refrigerant distribution for superior heat exchange and improved evaporation temperature.",
+      icon: "❄️",
     },
     {
-      title: "Smart Controls",
-      description: "Intelligent monitoring and control systems optimize performance and enable remote management.",
+      title: "Stepless Capacity Adjustment",
+      description: "Capacity adjust slide valve with solenoid valve and oil pressure piston enables smooth, stepless capacity control from 25-100%.",
       icon: "📊",
     },
     {
-      title: "Low Maintenance",
-      description: "Designed for easy servicing with accessible components and extended service intervals.",
-      icon: "🔨",
+      title: "Eco-Friendly R134a Refrigerant",
+      description: "Environmentally responsible refrigerant with zero ozone depletion potential, complying with the Montreal Protocol.",
+      icon: "🌱",
     },
     {
-      title: "Environmental",
-      description: "Eco-friendly refrigerants and efficient operation minimize environmental impact.",
-      icon: "🌱",
+      title: "Intelligent Control System",
+      description: "Real-time load prediction, safe unit monitoring with automatic adjustments, and intelligent failure response for reliable operation.",
+      icon: "🧠",
+    },
+    {
+      title: "Reliable Oil Management",
+      description: "Three-stage oil separation (99.99% efficiency), differential pressure-type oil supply, and double oil return system for stable operation.",
+      icon: "🛢️",
+    },
+    {
+      title: "Quiet Operation",
+      description: "Sound level as low as 65 dB(A) at partial load with shock-absorbing cushion installation and built-in discharge muffler.",
+      icon: "🔇",
     },
   ];
 
@@ -90,12 +100,15 @@ export default function ChillerSystemsPage() {
   ];
 
   const specifications = [
-    { label: "Capacity Range", value: "20 TR to 3000 TR" },
-    { label: "Refrigerants", value: "R134a, R410A, R407C, R513A" },
-    { label: "Cooling Method", value: "Air-Cooled / Water-Cooled" },
-    { label: "Energy Efficiency", value: "EER 2.8 to 6.5" },
-    { label: "Control System", value: "Microprocessor PLC" },
-    { label: "Operating Range", value: "-10°C to 45°C ambient" },
+    { label: "Series", value: "CWE (Water-Cooled)" },
+    { label: "Compressor Type", value: "Semi-hermetic twin-rotor screw" },
+    { label: "Refrigerant", value: "R134a (Eco-friendly)" },
+    { label: "Capacity Control", value: "Stepless 25-100%" },
+    { label: "Evaporator", value: "Flooded type high-efficiency" },
+    { label: "Condenser", value: "Double-side reinforced shell & tube" },
+    { label: "Oil Separation", value: "99.99% efficiency (3-stage)" },
+    { label: "Noise Level", value: "As low as 65 dB(A)" },
+    { label: "Control Panel", value: "Touch screen with intelligent control" },
   ];
 
   return (
@@ -111,7 +124,7 @@ export default function ChillerSystemsPage() {
               Chiller Systems
             </h1>
             <p className="text-xl text-white/75">
-              Industrial-grade air-cooled, water-cooled, and centrifugal chiller systems engineered for reliability, efficiency, and precision cooling in demanding applications.
+              Water-cooled and air-cooled screw chiller systems featuring advanced twin-rotor compressors, eco-friendly R134a refrigerant, and intelligent control for industrial precision cooling.
             </p>
           </div>
         </div>
@@ -123,24 +136,27 @@ export default function ChillerSystemsPage() {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
               <h2 className="text-4xl font-bold text-gray-900 mb-6 tracking-tight">
-                Precision Process Cooling
+                CWE Series Water-Cooled Screw Chillers
               </h2>
               <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
                 <p>
-                  Our chiller systems deliver reliable, efficient cooling for industrial processes, manufacturing facilities, and commercial buildings requiring precise temperature control.
+                  Experience superior cooling performance with CWE Series water-cooled screw chillers. Featuring advanced twin-rotor semi-hermetic compressors with 5-6 teeth profile design, these systems deliver exceptional volumetric efficiency and reliability.
                 </p>
                 <p>
-                  From compact air-cooled units to large-capacity water-cooled and centrifugal chillers, we provide solutions engineered for 24/7 operation in the most demanding environments.
+                  Our enclosed motor design ensures complete cooling without heat dissipation issues, while the flooded-type evaporator with optimized refrigerant distribution maximizes heat exchange efficiency. The new double-side reinforced condenser tube optimizes subcooling and reduces pressure loss.
                 </p>
                 <p>
-                  Each system features advanced controls, energy-efficient components, and robust construction to ensure maximum uptime and minimal operating costs throughout the system lifecycle.
+                  With stepless capacity adjustment from 25-100%, eco-friendly R134a refrigerant, and intelligent control systems featuring real-time load prediction, the CWE Series provides precise temperature control with industry-leading energy efficiency and quiet operation as low as 65 dB(A).
                 </p>
               </div>
             </div>
-            <div className="relative h-96 bg-gray-200 rounded-2xl overflow-hidden">
-              <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-blue-100 to-gray-100">
-                <div className="text-8xl opacity-20">❄️</div>
-              </div>
+            <div className="relative h-96 bg-gray-100 rounded-2xl overflow-hidden">
+              <Image
+                src="/products/watercooled chiller1.png"
+                alt="CWE Series Water-Cooled Screw Chiller"
+                fill
+                className="object-contain"
+              />
             </div>
           </div>
         </div>
@@ -170,33 +186,101 @@ export default function ChillerSystemsPage() {
         </div>
       </section>
 
-      {/* Chiller Types */}
+      {/* Chiller Series */}
       <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-14">
             <h2 className="text-4xl font-bold text-gray-900 mb-4 tracking-tight">
-              Chiller System Types
+              Our Chiller System Series
             </h2>
             <p className="text-lg text-gray-600">
-              Comprehensive range for every application requirement
+              Water-cooled and air-cooled solutions for every requirement
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8">
-            {chillerTypes.map((type, idx) => (
-              <div key={idx} className="bg-gray-50 rounded-2xl p-8 border border-gray-200">
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">{type.title}</h3>
-                <p className="text-blue-600 font-semibold mb-6">{type.capacity}</p>
-                <ul className="space-y-3">
-                  {type.features.map((feature, fidx) => (
-                    <li key={fidx} className="flex items-start text-gray-700">
-                      <span className="text-blue-600 mr-3 mt-1">✓</span>
-                      <span>{feature}</span>
-                    </li>
-                  ))}
-                </ul>
+          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            {/* Water-Cooled CWE Series */}
+            <div className="bg-white rounded-2xl p-8 border-2 border-blue-600">
+              <div className="inline-block bg-blue-600 text-white px-4 py-1 rounded-full text-sm font-semibold mb-4">
+                Featured
               </div>
-            ))}
+              <h3 className="text-3xl font-bold text-gray-900 mb-4">CWE Series</h3>
+              <p className="text-blue-600 font-semibold mb-2">Water-Cooled Screw Chiller</p>
+              <p className="text-gray-600 mb-6 leading-relaxed">
+                Advanced twin-rotor semi-hermetic screw compressor system with superior efficiency and reliability.
+              </p>
+              <ul className="space-y-3 text-gray-700 mb-6">
+                <li className="flex items-start">
+                  <span className="text-blue-600 mr-3 text-xl">✓</span>
+                  <span>Semi-hermetic twin-rotor screw compressor</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-blue-600 mr-3 text-xl">✓</span>
+                  <span>Eco-friendly R134a refrigerant</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-blue-600 mr-3 text-xl">✓</span>
+                  <span>Stepless capacity adjustment (25-100%)</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-blue-600 mr-3 text-xl">✓</span>
+                  <span>Flooded evaporator high efficiency</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-blue-600 mr-3 text-xl">✓</span>
+                  <span>Intelligent control with touch screen</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-blue-600 mr-3 text-xl">✓</span>
+                  <span>Quiet operation (65 dB(A))</span>
+                </li>
+              </ul>
+              <div className="bg-blue-50 rounded-lg p-4">
+                <p className="text-sm text-gray-700">
+                  <strong>Best for:</strong> Manufacturing, pharmaceutical plants, data centers, food processing
+                </p>
+              </div>
+            </div>
+
+            {/* Air-Cooled CAS & CAE Series */}
+            <div className="bg-white rounded-2xl p-8 border border-gray-200">
+              <h3 className="text-3xl font-bold text-gray-900 mb-4">CAS & CAE Series</h3>
+              <p className="text-blue-600 font-semibold mb-2">Air-Cooled Screw Chiller</p>
+              <p className="text-gray-600 mb-6 leading-relaxed">
+                Efficient air-cooled solutions requiring no cooling tower, ideal for water-scarce locations.
+              </p>
+              <ul className="space-y-3 text-gray-700 mb-6">
+                <li className="flex items-start">
+                  <span className="text-blue-600 mr-3 text-xl">✓</span>
+                  <span>No cooling tower required</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-blue-600 mr-3 text-xl">✓</span>
+                  <span>Lower installation cost</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-blue-600 mr-3 text-xl">✓</span>
+                  <span>Screw compressor technology</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-blue-600 mr-3 text-xl">✓</span>
+                  <span>Compact footprint design</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-blue-600 mr-3 text-xl">✓</span>
+                  <span>Quick installation & commissioning</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-blue-600 mr-3 text-xl">✓</span>
+                  <span>Flexible outdoor placement</span>
+                </li>
+              </ul>
+              <div className="bg-gray-50 rounded-lg p-4">
+                <p className="text-sm text-gray-700">
+                  <strong>Best for:</strong> Commercial buildings, hotels, hospitals, offices
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>

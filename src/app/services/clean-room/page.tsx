@@ -4,34 +4,34 @@ import Link from "next/link";
 export default function CleanRoomPage() {
   const features = [
     {
-      title: "ISO Certified Classes",
-      description: "Design and installation for ISO Class 1 through Class 100,000 clean room environments.",
+      title: "Lightweight EPS Panels",
+      description: "10-14 kg/m² sandwich panels with excellent thermal insulation (0.032 kcal/m·h·°C) for fast installation and superior energy efficiency.",
+      icon: "🧱",
+    },
+    {
+      title: "Airtight Door Systems",
+      description: "Fully sealed stainless steel and aluminum doors with automatic bottom/top sealing and silicone rubber gaskets to maintain pressure differentials.",
+      icon: "🚪",
+    },
+    {
+      title: "Temperature Control ±1-2°C",
+      description: "Achieve precise temperature stability of 23-24°C with minimal deviation for sensitive manufacturing processes.",
+      icon: "🌡️",
+    },
+    {
+      title: "Humidity Control ±5%",
+      description: "Maintain 45-55% relative humidity with tight control for electronics assembly and pharmaceutical production.",
+      icon: "💧",
+    },
+    {
+      title: "Fast Construction Cycle",
+      description: "Tongue & groove and corrugated interlocking panels enable quick installation with reduced labor costs and project timelines.",
+      icon: "⚡",
+    },
+    {
+      title: "Class 10,000 Performance",
+      description: "Proven cleanroom performance in large-scale electronics manufacturing with complete contamination control.",
       icon: "✓",
-    },
-    {
-      title: "HEPA/ULPA Filtration",
-      description: "Advanced filtration systems remove 99.99% of particles ensuring pristine air quality.",
-      icon: "🔬",
-    },
-    {
-      title: "Precise Control",
-      description: "Maintain tight tolerances for temperature, humidity, and pressure differentials.",
-      icon: "🎯",
-    },
-    {
-      title: "Energy Recovery",
-      description: "Integrated heat recovery systems reduce operating costs while maintaining standards.",
-      icon: "♻️",
-    },
-    {
-      title: "Continuous Monitoring",
-      description: "Real-time sensors and alarms ensure immediate response to any deviation.",
-      icon: "📊",
-    },
-    {
-      title: "Validated Systems",
-      description: "Complete documentation and validation protocols for regulatory compliance.",
-      icon: "📋",
     },
   ];
 
@@ -59,12 +59,14 @@ export default function CleanRoomPage() {
   ];
 
   const specifications = [
-    { label: "Clean Room Classes", value: "ISO Class 1 to 100,000" },
-    { label: "Temperature Control", value: "±0.5°C accuracy" },
-    { label: "Humidity Control", value: "±2% RH accuracy" },
-    { label: "Air Changes", value: "15 to 600 ACH" },
-    { label: "Pressure Differential", value: "5 to 20 Pa" },
-    { label: "Filtration", value: "HEPA H13/H14, ULPA U15/U16" },
+    { label: "Cleanroom Class", value: "Class 10,000" },
+    { label: "Temperature Control", value: "23-24°C ±1-2°C" },
+    { label: "Humidity Control", value: "45-55% ±5%" },
+    { label: "Panel Thickness", value: "50-250 mm (various options)" },
+    { label: "Panel Weight", value: "10-14 kg/m²" },
+    { label: "Thermal Insulation", value: "0.032 kcal/m·h·°C" },
+    { label: "Door Sizes", value: "900-1500 mm × 2100 mm" },
+    { label: "Wall Widths", value: "950, 1050, 1150 mm effective" },
   ];
 
   const industries = [
@@ -91,7 +93,7 @@ export default function CleanRoomPage() {
               Clean Room HVAC
             </h1>
             <p className="text-xl text-white/75">
-              Precision-engineered controlled environment HVAC systems for pharmaceutical, electronics, medical device, and research facilities requiring the highest levels of air quality and contamination control.
+              Complete cleanroom envelope solutions featuring EPS sandwich panels, airtight stainless steel and aluminum doors, and integrated HVAC systems for pharmaceutical, electronics, and medical facilities requiring controlled environments.
             </p>
           </div>
         </div>
@@ -103,23 +105,46 @@ export default function CleanRoomPage() {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
               <h2 className="text-4xl font-bold text-gray-900 mb-6 tracking-tight">
-                Controlled Environment Expertise
+                Complete Cleanroom Envelope Solutions
               </h2>
               <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
                 <p>
-                  Clean room HVAC systems are critical infrastructure for industries where product quality, safety, and regulatory compliance depend on maintaining pristine environmental conditions.
+                  Our cleanroom systems serve critical pharmaceutical and medical production facilities including tablet/capsule manufacturing, injectable drug production, vaccine labs, IV fluid production, sterile packaging rooms, and medical device assembly. We provide complete airtight enclosures using lightweight EPS sandwich panels (10-14 kg/m²) with excellent thermal insulation.
                 </p>
                 <p>
-                  We design, install, and validate complete clean room HVAC systems from ISO Class 1 to Class 100,000, incorporating advanced filtration, precise temperature and humidity control, and positive/negative pressure management.
+                  Delivering Class 10,000 cleanroom performance with precise temperature control (23-24°C ±1-2°C) and humidity management (45-55% ±5%), our systems feature fully airtight stainless steel and aluminum doors with embedded silicone sealing to maintain pressure differentials essential for pharmaceutical and medical manufacturing.
                 </p>
                 <p>
-                  Our systems integrate seamlessly with building automation, providing real-time monitoring, alarm systems, and complete documentation for FDA, WHO, and other regulatory compliance requirements.
+                  Successfully deployed across pharmaceuticals, medical device production, and large-scale electronics manufacturing including TV production, refrigerator assembly, mobile phone manufacturing, PCB fabrication, and compressor workshops—with projects spanning up to 20,000 sqm workshop areas.
                 </p>
               </div>
             </div>
-            <div className="relative h-96 bg-gray-200 rounded-2xl overflow-hidden">
-              <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-blue-100 to-gray-100">
-                <div className="text-8xl opacity-20">🔬</div>
+            <div className="space-y-4">
+              <div>
+                <div className="relative h-64 bg-gray-100 rounded-2xl overflow-hidden">
+                  <Image
+                    src="/products/cleanroom1.png"
+                    alt="Cleanroom Air Shower with Interlocking Airtight Doors"
+                    fill
+                    className="object-contain"
+                  />
+                </div>
+                <p className="text-sm text-gray-900 font-bold mt-2 text-center">
+                  Cleanroom Air Shower with Interlocking Airtight Doors
+                </p>
+              </div>
+              <div>
+                <div className="relative h-64 bg-gray-100 rounded-2xl overflow-hidden">
+                  <Image
+                    src="/products/cleanroom2.jpeg"
+                    alt="Cleanroom Air Handling Unit (AHU) / Clean Operating Room HVAC Unit"
+                    fill
+                    className="object-contain"
+                  />
+                </div>
+                <p className="text-sm text-gray-900 font-bold mt-2 text-center">
+                  Cleanroom Air Handling Unit (AHU) / Clean Operating Room HVAC Unit
+                </p>
               </div>
             </div>
           </div>
@@ -150,34 +175,105 @@ export default function CleanRoomPage() {
         </div>
       </section>
 
-      {/* Clean Room Classes */}
+      {/* Product Systems */}
       <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-14">
             <h2 className="text-4xl font-bold text-gray-900 mb-4 tracking-tight">
-              ISO Clean Room Classifications
+              Cleanroom System Components
             </h2>
             <p className="text-lg text-gray-600">
-              We design and validate systems for all ISO 14644-1 classifications
+              Complete envelope solutions for airtight, controlled environments
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8">
-            {cleanroomClasses.map((item, idx) => (
-              <div key={idx} className="bg-gray-50 rounded-2xl p-8 border border-gray-200">
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">{item.class}</h3>
-                <p className="text-blue-600 font-semibold mb-6">{item.particles}</p>
-                <div className="space-y-2">
-                  <p className="font-semibold text-gray-900 text-sm uppercase tracking-wide mb-3">Typical Applications:</p>
-                  {item.applications.map((app, aidx) => (
-                    <p key={aidx} className="text-gray-700 flex items-start">
-                      <span className="text-blue-600 mr-2">•</span>
-                      <span>{app}</span>
-                    </p>
-                  ))}
-                </div>
-              </div>
-            ))}
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="bg-gray-50 rounded-2xl p-8 border border-gray-200">
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">EPS Sandwich Panels</h3>
+              <p className="text-gray-600 mb-6 leading-relaxed">
+                Lightweight wall and ceiling panels with polystyrene core and pre-painted steel outer layers.
+              </p>
+              <ul className="space-y-3 text-gray-700 text-sm">
+                <li className="flex items-start">
+                  <span className="text-blue-600 mr-2">•</span>
+                  <span>Thickness: 50-250 mm</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-blue-600 mr-2">•</span>
+                  <span>Weight: 10-14 kg/m²</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-blue-600 mr-2">•</span>
+                  <span>Widths: 950/1050/1150 mm</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-blue-600 mr-2">•</span>
+                  <span>Tongue & groove interlocking</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-blue-600 mr-2">•</span>
+                  <span>High stiffness (L/240 deformation)</span>
+                </li>
+              </ul>
+            </div>
+
+            <div className="bg-gray-50 rounded-2xl p-8 border border-gray-200">
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Stainless Steel Doors</h3>
+              <p className="text-gray-600 mb-6 leading-relaxed">
+                Fully airtight doors with SUS304 stainless steel construction and embedded silicone sealing.
+              </p>
+              <ul className="space-y-3 text-gray-700 text-sm">
+                <li className="flex items-start">
+                  <span className="text-blue-600 mr-2">•</span>
+                  <span>Sizes: 900-1500 × 2100 mm</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-blue-600 mr-2">•</span>
+                  <span>Frame: 1.2-1.5 mm steel/SUS304</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-blue-600 mr-2">•</span>
+                  <span>Automatic sealing mechanism</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-blue-600 mr-2">•</span>
+                  <span>Single/double/vision panel types</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-blue-600 mr-2">•</span>
+                  <span>Wire drawing finish option</span>
+                </li>
+              </ul>
+            </div>
+
+            <div className="bg-gray-50 rounded-2xl p-8 border border-gray-200">
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Aluminum Airtight Doors</h3>
+              <p className="text-gray-600 mb-6 leading-relaxed">
+                Lightweight magnetic doors with sandblasted aluminum frames and antimicrobial coating.
+              </p>
+              <ul className="space-y-3 text-gray-700 text-sm">
+                <li className="flex items-start">
+                  <span className="text-blue-600 mr-2">•</span>
+                  <span>Sizes: 900-1500 × 2100 mm</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-blue-600 mr-2">•</span>
+                  <span>Magnetic bumper pad sealing</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-blue-600 mr-2">•</span>
+                  <span>Sandblasted & oxidized frame</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-blue-600 mr-2">•</span>
+                  <span>Paper/aluminum honeycomb core</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-blue-600 mr-2">•</span>
+                  <span>Automatic up/down sealing</span>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
@@ -202,17 +298,60 @@ export default function CleanRoomPage() {
 
             <div>
               <h2 className="text-4xl font-bold text-gray-900 mb-8 tracking-tight">
-                Industries Served
+                Industries & Applications
               </h2>
               <div className="bg-white rounded-2xl p-8">
-                <ul className="space-y-3">
-                  {industries.map((industry, idx) => (
-                    <li key={idx} className="flex items-start text-gray-700">
-                      <span className="text-blue-600 mr-3 mt-1">✓</span>
-                      <span className="text-lg">{industry}</span>
-                    </li>
-                  ))}
+                <p className="text-gray-700 font-semibold mb-4">Pharmaceutical & Medical Production:</p>
+                <ul className="space-y-3 mb-6">
+                  <li className="flex items-start text-gray-700">
+                    <span className="text-blue-600 mr-3 mt-1">✓</span>
+                    <span className="text-lg">Tablet / Capsule Manufacturing</span>
+                  </li>
+                  <li className="flex items-start text-gray-700">
+                    <span className="text-blue-600 mr-3 mt-1">✓</span>
+                    <span className="text-lg">Injectable Drug Production</span>
+                  </li>
+                  <li className="flex items-start text-gray-700">
+                    <span className="text-blue-600 mr-3 mt-1">✓</span>
+                    <span className="text-lg">Vaccine Production Labs</span>
+                  </li>
+                  <li className="flex items-start text-gray-700">
+                    <span className="text-blue-600 mr-3 mt-1">✓</span>
+                    <span className="text-lg">IV Fluid Production</span>
+                  </li>
+                  <li className="flex items-start text-gray-700">
+                    <span className="text-blue-600 mr-3 mt-1">✓</span>
+                    <span className="text-lg">Sterile Packaging Rooms</span>
+                  </li>
+                  <li className="flex items-start text-gray-700">
+                    <span className="text-blue-600 mr-3 mt-1">✓</span>
+                    <span className="text-lg">Medical Device Assembly</span>
+                  </li>
                 </ul>
+                <p className="text-gray-700 font-semibold mb-4 mt-6">Electronics Manufacturing:</p>
+                <ul className="space-y-3 mb-6">
+                  <li className="flex items-start text-gray-700">
+                    <span className="text-blue-600 mr-3 mt-1">✓</span>
+                    <span className="text-lg">TV Manufacturing Workshop</span>
+                  </li>
+                  <li className="flex items-start text-gray-700">
+                    <span className="text-blue-600 mr-3 mt-1">✓</span>
+                    <span className="text-lg">Mobile Phone Manufacturing</span>
+                  </li>
+                  <li className="flex items-start text-gray-700">
+                    <span className="text-blue-600 mr-3 mt-1">✓</span>
+                    <span className="text-lg">PCB Fabrication Workshop</span>
+                  </li>
+                  <li className="flex items-start text-gray-700">
+                    <span className="text-blue-600 mr-3 mt-1">✓</span>
+                    <span className="text-lg">Refrigerator & Compressor Assembly</span>
+                  </li>
+                </ul>
+                <div className="bg-blue-50 rounded-lg p-4 mt-6">
+                  <p className="text-sm text-gray-700">
+                    <strong>Project Scale:</strong> Up to 20,000 sqm workshop areas with 1,000 sqm cleanroom zones
+                  </p>
+                </div>
               </div>
             </div>
           </div>

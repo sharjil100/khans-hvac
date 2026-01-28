@@ -109,6 +109,21 @@ export default function ProjectsPage() {
       images: ["/projects/yokohama-1.jpg", "/projects/yokohama-2.jpg", "/projects/yokohama-3.jpg"],
     },
     {
+      title: "Aristopharma Manufacturing Facility",
+      client: "Aristopharma Ltd.",
+      location: "Dhaka",
+      scope: "Clean Room HVAC (Class 10,000), AHU Systems, Dehumidification, Temperature & Humidity Control",
+      year: "2026",
+      category: "Pharmaceutical",
+      thumbnail: "/Aristopharma/WhatsApp Image 2026-01-26 at 3.51.02 PM.jpeg",
+      images: [
+        "/Aristopharma/WhatsApp Image 2026-01-26 at 3.51.02 PM.jpeg",
+        "/Aristopharma/WhatsApp Image 2026-01-26 at 3.51.06 PM (1).jpeg",
+        "/Aristopharma/WhatsApp Image 2026-01-26 at 3.51.06 PM (2).jpeg",
+        "/Aristopharma/WhatsApp Image 2026-01-26 at 3.51.26 PM (1).jpeg",
+      ],
+    },
+    {
       title: "Pharmaceutical Manufacturing Facility",
       client: "Abdul Monem Limited",
       location: "Dhaka",
@@ -119,7 +134,7 @@ export default function ProjectsPage() {
       images: ["/projects/pharma-1-1.jpg", "/projects/pharma-1-2.jpg", "/projects/pharma-1-3.jpg"],
     },
     {
-      title: "Hospital HVAC & Medical Gas Pipeline",
+      title: "Bashundhara Headquarters",
       client: "Bashundhara Group",
       location: "Dhaka",
       scope: "Central HVAC, Operating Theater Climate Control, Medical Gas Distribution",

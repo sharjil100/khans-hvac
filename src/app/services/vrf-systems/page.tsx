@@ -4,44 +4,54 @@ import Link from "next/link";
 export default function VRFSystemsPage() {
   const features = [
     {
-      title: "Energy Efficiency",
-      description: "Advanced inverter technology delivers powerful performance while reducing operating costs and environmental impact.",
+      title: "Full DC Inverter Technology",
+      description: "Wide adjustment range for flexible cooling/heating capacity, improved energy efficiency, and precise temperature control.",
       icon: "⚡",
     },
     {
-      title: "Multi-Zone Control",
-      description: "Independently control temperature in multiple zones with a single outdoor unit for flexible comfort.",
-      icon: "🎯",
+      title: "Enhanced Vapor Injection (EVI) Compressor",
+      description: "Superior heating performance in cold climates with non-vapor injection technology for optimal efficiency.",
+      icon: "🔥",
     },
     {
-      title: "Space Saving",
-      description: "Compact design requires minimal installation space compared to traditional systems.",
-      icon: "📏",
+      title: "Advanced Subcooling Technology",
+      description: "EEV control for enhanced system efficiency, improving overall performance and energy savings.",
+      icon: "❄️",
     },
     {
-      title: "Quiet Operation",
-      description: "Low noise levels ensure comfortable indoor environments in offices, hotels, and residential buildings.",
-      icon: "🔇",
+      title: "Low Standby Power Consumption",
+      description: "60-step energy management reduces power consumption by 35% (30W reduction from traditional 55W VRF systems).",
+      icon: "💡",
     },
     {
-      title: "Simultaneous Heating & Cooling",
-      description: "Heat recovery systems allow different zones to heat and cool simultaneously for optimal comfort.",
+      title: "Wide Operation Range",
+      description: "Cooling: -10°C to 54°C outdoor temperature. Heating: -30°C to 30°C. Reliable performance in extreme conditions.",
+      icon: "🌡️",
+    },
+    {
+      title: "Auto Dust-Clean Function",
+      description: "Self-cleaning technology maintains optimal performance and reduces maintenance requirements.",
       icon: "🔄",
     },
     {
-      title: "Long Piping Length",
-      description: "Extended refrigerant piping capability allows flexible installation in large buildings.",
-      icon: "📐",
+      title: "HyperLink Communication",
+      description: "Greatly simplifies installation and saves costs with advanced communication technology.",
+      icon: "🔗",
+    },
+    {
+      title: "SuperSense Technology",
+      description: "High reliability, stable operation, and enhanced comfort through intelligent sensing and control.",
+      icon: "🎯",
     },
   ];
 
   const specifications = [
-    { label: "Capacity Range", value: "4.0 TR to 50 TR" },
-    { label: "Indoor Units", value: "Up to 64 units per system" },
-    { label: "Piping Length", value: "Up to 1,000 meters" },
-    { label: "Height Difference", value: "Up to 90 meters" },
-    { label: "Energy Efficiency", value: "SEER up to 22" },
-    { label: "Operating Range", value: "-20°C to 50°C" },
+    { label: "Capacity Range", value: "76,000 - 870,000 BTU" },
+    { label: "Indoor Unit Types", value: "12+ configurations available" },
+    { label: "Cooling Range", value: "-10°C to 54°C outdoor" },
+    { label: "Heating Range", value: "-30°C to 30°C outdoor" },
+    { label: "Power Consumption", value: "35W standby (30W reduction)" },
+    { label: "Control Options", value: "Wireless, wired, centralized" },
   ];
 
   const applications = [
@@ -68,7 +78,7 @@ export default function VRFSystemsPage() {
               VRF Systems
             </h1>
             <p className="text-xl text-white/75">
-              Variable Refrigerant Flow air conditioning systems deliver precise temperature control, exceptional energy efficiency, and flexible installation for modern commercial and residential buildings.
+              Advanced Variable Refrigerant Flow systems featuring Full DC Inverter Technology, Enhanced Vapor Injection compressors, and 60-step energy management for superior performance in extreme climates.
             </p>
           </div>
         </div>
@@ -80,24 +90,27 @@ export default function VRFSystemsPage() {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
               <h2 className="text-4xl font-bold text-gray-900 mb-6 tracking-tight">
-                Advanced Climate Control Technology
+                VRF Systems by SIMILAR
               </h2>
               <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
                 <p>
-                  VRF (Variable Refrigerant Flow) systems represent the latest advancement in air conditioning technology, offering superior comfort control and energy efficiency for buildings of all sizes.
+                  Experience world-class climate control with VRF systems engineered in Thailand and certified by leading international standards. Our ERV8 and ERVc max series deliver exceptional performance with capacities ranging from 76,000 to 870,000 BTU.
                 </p>
                 <p>
-                  These systems use inverter-driven compressors to precisely control refrigerant flow to multiple indoor units, ensuring optimal comfort while minimizing energy consumption. A single outdoor unit can serve dozens of indoor units across multiple zones.
+                  Featuring Full DC Inverter Technology and Enhanced Vapor Injection (EVI) compressors, these systems provide reliable heating even in -30°C conditions and cooling in up to 54°C outdoor temperatures. Advanced subcooling technology and 60-step energy management reduce standby power consumption by 35%.
                 </p>
                 <p>
-                  Ideal for commercial offices, hotels, hospitals, and large residential projects, VRF systems provide simultaneous heating and cooling capabilities, making them perfect for buildings with varying thermal requirements.
+                  With ShieldBox protection, HyperLink communication, and SuperSense technology, our VRF systems offer flexible installation with arbitrary topology support including daisy chain, star, ring, and tree connections.
                 </p>
               </div>
             </div>
-            <div className="relative h-96 bg-gray-200 rounded-2xl overflow-hidden">
-              <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-blue-100 to-gray-100">
-                <div className="text-8xl opacity-20">❄️</div>
-              </div>
+            <div className="relative h-96 bg-gray-100 rounded-2xl overflow-hidden">
+              <Image
+                src="/products/vrf1.png"
+                alt="ERV8 VRF System"
+                fill
+                className="object-contain"
+              />
             </div>
           </div>
         </div>
@@ -164,77 +177,153 @@ export default function VRFSystemsPage() {
         </div>
       </section>
 
-      {/* Product Types */}
+      {/* Product Series */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-14">
             <h2 className="text-4xl font-bold text-gray-900 mb-4 tracking-tight">
-              VRF System Types
+              Our VRF System Series
             </h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              Choose from our advanced ERV8 and ERVc max series for optimal performance
+            </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white rounded-2xl p-8 border border-gray-200">
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Heat Pump</h3>
+          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            <div className="bg-white rounded-2xl p-8 border-2 border-blue-600">
+              <div className="inline-block bg-blue-600 text-white px-4 py-1 rounded-full text-sm font-semibold mb-4">
+                Featured
+              </div>
+              <h3 className="text-3xl font-bold text-gray-900 mb-4">ERV8</h3>
               <p className="text-gray-600 mb-6 leading-relaxed">
-                All indoor units operate in the same mode (cooling or heating). Ideal for buildings with uniform temperature requirements.
+                Our flagship series featuring Enhanced Vapor Injection compressor technology for superior heating performance in extreme cold climates down to -30°C.
               </p>
-              <ul className="space-y-2 text-gray-700">
+              <ul className="space-y-3 text-gray-700 mb-6">
                 <li className="flex items-start">
-                  <span className="text-blue-600 mr-2">•</span>
-                  <span>Cost-effective solution</span>
+                  <span className="text-blue-600 mr-3 text-xl">✓</span>
+                  <span>Full DC Inverter Technology</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-blue-600 mr-2">•</span>
-                  <span>Simple operation</span>
+                  <span className="text-blue-600 mr-3 text-xl">✓</span>
+                  <span>EVI Compressor for cold climate</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-blue-600 mr-2">•</span>
-                  <span>High efficiency</span>
+                  <span className="text-blue-600 mr-3 text-xl">✓</span>
+                  <span>Advanced Subcooling Technology</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-blue-600 mr-3 text-xl">✓</span>
+                  <span>35W standby power (30W reduction)</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-blue-600 mr-3 text-xl">✓</span>
+                  <span>ERVB wiring with anti-interference</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-blue-600 mr-3 text-xl">✓</span>
+                  <span>Wide capacity range available</span>
                 </li>
               </ul>
+              <div className="bg-blue-50 rounded-lg p-4">
+                <p className="text-sm text-gray-700">
+                  <strong>Operating Range:</strong> Cooling -10°C to 54°C | Heating -30°C to 30°C
+                </p>
+              </div>
             </div>
 
             <div className="bg-white rounded-2xl p-8 border border-gray-200">
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Heat Recovery</h3>
+              <h3 className="text-3xl font-bold text-gray-900 mb-4">ERVc max</h3>
               <p className="text-gray-600 mb-6 leading-relaxed">
-                Allows simultaneous heating and cooling in different zones. Perfect for buildings with varying thermal loads.
+                Maximum efficiency series designed for optimal performance in standard climate conditions with advanced energy management systems.
               </p>
-              <ul className="space-y-2 text-gray-700">
+              <ul className="space-y-3 text-gray-700 mb-6">
                 <li className="flex items-start">
-                  <span className="text-blue-600 mr-2">•</span>
-                  <span>Simultaneous heating/cooling</span>
+                  <span className="text-blue-600 mr-3 text-xl">✓</span>
+                  <span>60-step Energy Management</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-blue-600 mr-2">•</span>
-                  <span>Energy recovery</span>
+                  <span className="text-blue-600 mr-3 text-xl">✓</span>
+                  <span>HyperLink simplified installation</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-blue-600 mr-2">•</span>
-                  <span>Maximum flexibility</span>
+                  <span className="text-blue-600 mr-3 text-xl">✓</span>
+                  <span>SuperSense high reliability</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-blue-600 mr-3 text-xl">✓</span>
+                  <span>ShieldBox all-weather protection</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-blue-600 mr-3 text-xl">✓</span>
+                  <span>Built-in circulating fan & PTC heater</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-blue-600 mr-3 text-xl">✓</span>
+                  <span>All microchannel refrigerant cooling</span>
                 </li>
               </ul>
+              <div className="bg-gray-50 rounded-lg p-4">
+                <p className="text-sm text-gray-700">
+                  <strong>Ideal for:</strong> Commercial buildings, hotels, offices, and residential complexes
+                </p>
+              </div>
             </div>
+          </div>
+        </div>
+      </section>
 
-            <div className="bg-white rounded-2xl p-8 border border-gray-200">
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Water Source</h3>
-              <p className="text-gray-600 mb-6 leading-relaxed">
-                Uses water as a heat source/sink. Suitable for buildings with existing water loops or cooling towers.
-              </p>
-              <ul className="space-y-2 text-gray-700">
-                <li className="flex items-start">
-                  <span className="text-blue-600 mr-2">•</span>
-                  <span>Efficient heat exchange</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-blue-600 mr-2">•</span>
-                  <span>Reduced outdoor units</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-blue-600 mr-2">•</span>
-                  <span>Quiet operation</span>
-                </li>
-              </ul>
+      {/* Indoor Unit Types */}
+      <section className="py-20 bg-white">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="text-center mb-14">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4 tracking-tight">
+              Indoor Unit Lineup
+            </h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              Flexible configurations to suit any space requirement
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-4 gap-6">
+            <div className="bg-gray-50 rounded-xl p-6 text-center">
+              <div className="text-3xl mb-3">🏢</div>
+              <h4 className="font-semibold text-gray-900 mb-2">Wall Mounted</h4>
+              <p className="text-sm text-gray-600">Space-saving design</p>
+            </div>
+            <div className="bg-gray-50 rounded-xl p-6 text-center">
+              <div className="text-3xl mb-3">⬜</div>
+              <h4 className="font-semibold text-gray-900 mb-2">Ceiling & Floor</h4>
+              <p className="text-sm text-gray-600">Versatile installation</p>
+            </div>
+            <div className="bg-gray-50 rounded-xl p-6 text-center">
+              <div className="text-3xl mb-3">📦</div>
+              <h4 className="font-semibold text-gray-900 mb-2">Cassette Types</h4>
+              <p className="text-sm text-gray-600">1-way to 4-way options</p>
+            </div>
+            <div className="bg-gray-50 rounded-xl p-6 text-center">
+              <div className="text-3xl mb-3">🔲</div>
+              <h4 className="font-semibold text-gray-900 mb-2">Duct Types</h4>
+              <p className="text-sm text-gray-600">Concealed installation</p>
+            </div>
+            <div className="bg-gray-50 rounded-xl p-6 text-center">
+              <div className="text-3xl mb-3">🏭</div>
+              <h4 className="font-semibold text-gray-900 mb-2">Air Handling Unit</h4>
+              <p className="text-sm text-gray-600">Large capacity spaces</p>
+            </div>
+            <div className="bg-gray-50 rounded-xl p-6 text-center">
+              <div className="text-3xl mb-3">📍</div>
+              <h4 className="font-semibold text-gray-900 mb-2">Floor Standing</h4>
+              <p className="text-sm text-gray-600">Easy maintenance</p>
+            </div>
+            <div className="bg-gray-50 rounded-xl p-6 text-center">
+              <div className="text-3xl mb-3">🌬️</div>
+              <h4 className="font-semibold text-gray-900 mb-2">Fresh Air Processing</h4>
+              <p className="text-sm text-gray-600">Ventilation system</p>
+            </div>
+            <div className="bg-gray-50 rounded-xl p-6 text-center">
+              <div className="text-3xl mb-3">⚙️</div>
+              <h4 className="font-semibold text-gray-900 mb-2">Custom Solutions</h4>
+              <p className="text-sm text-gray-600">Tailored configurations</p>
             </div>
           </div>
         </div>
