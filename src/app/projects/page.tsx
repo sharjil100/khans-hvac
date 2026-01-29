@@ -51,7 +51,6 @@ function ProjectCard({ project }: { project: any }) {
           <span className="inline-block px-3 py-1 bg-blue-100 text-blue-700 text-xs font-semibold rounded-full uppercase tracking-wider">
             {project.category}
           </span>
-          <span className="text-sm text-gray-500 font-medium">{project.year}</span>
         </div>
         <h3 className="text-xl font-bold text-gray-900 mb-2">
           {project.title}
@@ -93,7 +92,7 @@ export default function ProjectsPage() {
       client: "Confidential",
       location: "Mirpur, Dhaka",
       scope: "Central HVAC System, VRF Systems, Commercial Climate Control",
-      year: "2026",
+      year: "2014",
       category: "Commercial",
       thumbnail: "/projects/mirpur-thumb.jpg",
       images: ["/projects/mirpur-thumb.jpg", "/projects/mirpur-1.jpg", "/projects/mirpur-2.jpg"],
@@ -124,64 +123,24 @@ export default function ProjectsPage() {
       ],
     },
     {
-      title: "Pharmaceutical Manufacturing Facility",
-      client: "Abdul Monem Limited",
-      location: "Dhaka",
-      scope: "Clean Room HVAC (Class 10,000), AHU Systems, Dehumidification",
-      year: "2023",
-      category: "Pharmaceutical",
-      thumbnail: "/projects/pharma-1-thumb.jpg",
-      images: ["/projects/pharma-1-1.jpg", "/projects/pharma-1-2.jpg", "/projects/pharma-1-3.jpg"],
-    },
-    {
-      title: "Bashundhara Headquarters",
-      client: "Bashundhara Group",
-      location: "Dhaka",
-      scope: "Central HVAC, Operating Theater Climate Control, Medical Gas Distribution",
-      year: "2022",
-      category: "Healthcare",
-      thumbnail: "/projects/hospital-1-thumb.jpg",
-      images: ["/projects/hospital-1-1.jpg", "/projects/hospital-1-2.jpg", "/projects/hospital-1-3.jpg"],
-    },
-    {
-      title: "Textile Manufacturing Plant",
-      client: "Akij Group",
-      location: "Gazipur",
-      scope: "Industrial Chiller System, Ventilation, Humidity Control",
-      year: "2023",
-      category: "Manufacturing",
-      thumbnail: "/projects/textile-1-thumb.jpg",
-      images: ["/projects/textile-1-1.jpg", "/projects/textile-1-2.jpg", "/projects/textile-1-3.jpg"],
-    },
-    {
-      title: "Commercial Office Tower",
-      client: "Badsha Group of Companies",
-      location: "Dhaka",
-      scope: "VRF Systems, AHU, FCU, Building Automation",
-      year: "2021",
-      category: "Commercial",
-      thumbnail: "/projects/office-1-thumb.jpg",
-      images: ["/projects/office-1-1.jpg", "/projects/office-1-2.jpg", "/projects/office-1-3.jpg"],
-    },
-    {
-      title: "Banking Headquarters",
+      title: "Suvastu Shopping Market",
       client: "Confidential",
       location: "Dhaka",
-      scope: "Precision Air Conditioning, Server Room HVAC, VRF Multi-Zone",
-      year: "2022",
+      scope: "Central HVAC System, VRF Systems, Commercial Climate Control",
+      year: "2023",
       category: "Commercial",
-      thumbnail: "/projects/bank-1-thumb.jpg",
-      images: ["/projects/bank-1-1.jpg", "/projects/bank-1-2.jpg", "/projects/bank-1-3.jpg"],
+      thumbnail: "/projects/Suvastu1.jpeg",
+      images: ["/projects/Suvastu1.jpeg", "/projects/Suvastu2.jpeg"],
     },
     {
-      title: "Pharmaceutical Clean Room Complex",
-      client: "AD-DIN Group of Companies",
-      location: "Dhaka",
-      scope: "Clean Room HVAC (Class 100-100,000), HEPA Filtration, Pressure Control",
-      year: "2023",
-      category: "Pharmaceutical",
-      thumbnail: "/projects/pharma-2-thumb.jpg",
-      images: ["/projects/pharma-2-1.jpg", "/projects/pharma-2-2.jpg", "/projects/pharma-2-3.jpg"],
+      title: "Flaxen Garments Factory",
+      client: "Flaxen Group",
+      location: "Bangladesh",
+      scope: "Industrial HVAC System, Climate Control, Ventilation",
+      year: "2022",
+      category: "Manufacturing",
+      thumbnail: "/projects/Flaxen1.jpeg",
+      images: ["/projects/Flaxen1.jpeg", "/projects/flaxen2.jpeg", "/projects/flaxen3.jpeg"],
     },
   ];
 
@@ -197,7 +156,7 @@ export default function ProjectsPage() {
               Our Work
             </span>
             <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 tracking-tight">
-              Completed Projects
+              Some of Our Projects
             </h1>
             <p className="text-xl text-white/75">
               Representative HVAC installations across pharmaceutical, healthcare, manufacturing, and commercial sectors in Bangladesh.

@@ -4,142 +4,141 @@ import Link from "next/link";
 export default function DehumidificationPage() {
   const features = [
     {
-      title: "Precise Humidity Control",
-      description: "Maintain exact humidity levels from 20% to 80% RH with ±2% accuracy for sensitive applications.",
+      title: "Swedish Desiccant Rotor Technology",
+      description: "Industrial-grade desiccant wheel from Sweden ensures continuous duty operation with exceptional reliability and longevity.",
       icon: "🎯",
     },
     {
-      title: "Energy Efficient",
-      description: "Advanced desiccant and refrigerant technologies minimize energy consumption while maximizing performance.",
+      title: "Extreme Temperature Operation",
+      description: "Operates reliably from –20°C to +60°C where compressor-based systems fail due to frosting.",
+      icon: "❄️",
+    },
+    {
+      title: "Ultra-Low Humidity Capability",
+      description: "Achieves very low RH levels for critical applications requiring precise moisture control below 20% RH.",
+      icon: "💧",
+    },
+    {
+      title: "Military-Grade Temperature Control",
+      description: "SCR controller with PT100 high-precision sensor ensures accurate regeneration temperature up to 120°C.",
+      icon: "🎚️",
+    },
+    {
+      title: "PTC Ceramic Heater",
+      description: "92% heating efficiency with advanced PTC ceramic regeneration heater designed for industrial duty.",
+      icon: "🔥",
+    },
+    {
+      title: "Premium Electrical Components",
+      description: "ABB, OMRON, and Schneider components ensure industrial panel integration and long-term reliability.",
       icon: "⚡",
-    },
-    {
-      title: "Corrosion Protection",
-      description: "Prevent rust, oxidation, and material degradation in storage and manufacturing environments.",
-      icon: "🛡️",
-    },
-    {
-      title: "Mold Prevention",
-      description: "Eliminate conditions that support mold, mildew, and bacterial growth in critical spaces.",
-      icon: "✓",
-    },
-    {
-      title: "Product Quality",
-      description: "Protect moisture-sensitive products and processes from humidity-related defects.",
-      icon: "📦",
-    },
-    {
-      title: "24/7 Operation",
-      description: "Continuous monitoring and control systems ensure consistent humidity management.",
-      icon: "🔄",
     },
   ];
 
   const systemTypes = [
     {
-      title: "Refrigerant Dehumidifiers",
-      capacity: "20 to 500 liters/day",
-      description: "Condensing technology for moderate humidity control in commercial and industrial spaces.",
+      title: "Small & Medium Capacity",
+      capacity: "0.6 to 6.2 kg/h",
+      description: "Compact desiccant rotor units for laboratories, pharmaceutical rooms, and smaller industrial applications.",
+      models: "GZB-200L to GZB-800L",
       features: [
-        "Cost-effective operation",
-        "Compact design",
-        "Low maintenance",
-        "Suitable for 40-90% RH",
+        "220V or 380V operation",
+        "45 m³ to 200 m³ space coverage",
+        "1.5 kW to 9.8 kW power range",
+        "7-15 days lead time",
       ],
     },
     {
-      title: "Desiccant Dehumidifiers",
-      capacity: "50 to 2000 liters/day",
-      description: "Chemical absorption for deep drying in cold storage, pharmaceuticals, and critical applications.",
+      title: "Large Industrial Systems",
+      capacity: "10.2 to 30.2 kg/h",
+      description: "Heavy-duty rotary desiccant systems for large manufacturing plants, warehouses, and critical facilities.",
+      models: "GZB-1000L to GZB-4500L",
       features: [
-        "Low temperature operation",
-        "Very low humidity (20% RH)",
-        "Regenerative technology",
-        "No condensate water",
-      ],
-    },
-    {
-      title: "Industrial Dehumidifiers",
-      capacity: "100 to 5000 liters/day",
-      description: "Heavy-duty systems for large facilities, warehouses, and manufacturing plants.",
-      features: [
-        "High capacity",
-        "Robust construction",
-        "Ducted distribution",
-        "BMS integration",
-      ],
-    },
-    {
-      title: "Pool Dehumidifiers",
-      capacity: "50 to 1000 liters/day",
-      description: "Specialized units for swimming pools, spas, and aquatic facilities with corrosion-resistant construction.",
-      features: [
-        "Chlorine resistant",
-        "Heat recovery",
-        "Energy efficient",
-        "Low noise operation",
+        "380V 3-phase power",
+        "80 m² to 350 m² area coverage",
+        "14.2 kW to 46.7 kW capacity",
+        "15-25 days lead time",
       ],
     },
   ];
 
   const applications = [
     {
-      title: "Pharmaceuticals",
-      description: "Protect active ingredients and maintain stability in manufacturing and storage areas.",
+      title: "Pharmaceutical Production",
+      description: "Tablet rooms, packaging areas, and sterile manufacturing require precise low-humidity control.",
       icon: "💊",
     },
     {
-      title: "Electronics",
-      description: "Prevent corrosion and static discharge in semiconductor and electronics manufacturing.",
+      title: "Lithium Battery Manufacturing",
+      description: "Dry rooms for battery cell production demand extremely low dew point environments.",
+      icon: "🔋",
+    },
+    {
+      title: "Electronics & Semiconductors",
+      description: "Prevent corrosion and electrostatic discharge in precision electronics manufacturing.",
       icon: "⚡",
     },
     {
-      title: "Food Storage",
-      description: "Extend shelf life and maintain quality in cold storage and warehouses.",
+      title: "Food Packaging & Storage",
+      description: "Extend shelf life and maintain quality in cold storage and processing facilities.",
       icon: "🍱",
     },
     {
       title: "Museums & Archives",
-      description: "Preserve artifacts, documents, and artwork with precise climate control.",
+      description: "Preserve artifacts, documents, and artwork with stable humidity control in any climate.",
       icon: "🏛️",
     },
     {
-      title: "Data Centers",
-      description: "Protect IT equipment from condensation and humidity-related failures.",
-      icon: "💾",
+      title: "Chemical Industry",
+      description: "Maintain process conditions and protect hygroscopic materials from moisture exposure.",
+      icon: "🧪",
     },
     {
-      title: "Indoor Pools",
-      description: "Control humidity and prevent structural damage in aquatic facilities.",
-      icon: "🏊",
+      title: "Hospitals & Medical Facilities",
+      description: "Critical care areas, operating rooms, and medical storage require continuous humidity control.",
+      icon: "🏥",
+    },
+    {
+      title: "Military & Civil Defense",
+      description: "Underground facilities, shelters, and military installations in challenging environments.",
+      icon: "🛡️",
+    },
+    {
+      title: "Laboratories & Research",
+      description: "University labs and research facilities need precise environmental control for sensitive work.",
+      icon: "🔬",
     },
   ];
 
   const specifications = [
-    { label: "Capacity Range", value: "20 to 5000 liters/day" },
-    { label: "Humidity Control", value: "20% to 90% RH" },
-    { label: "Operating Temperature", value: "5°C to 40°C" },
-    { label: "Control Accuracy", value: "±2% RH" },
-    { label: "Technology", value: "Refrigerant / Desiccant" },
-    { label: "Energy Recovery", value: "Up to 80% heat recovery" },
+    { label: "Dehumidification Capacity", value: "0.6 to 30.2 kg/h" },
+    { label: "Process Air Flow", value: "220 to 4500 m³/h" },
+    { label: "Operating Temperature", value: "–20°C to +60°C" },
+    { label: "Applied Temperature Range", value: "–20°C to +70°C" },
+    { label: "Regeneration Temperature", value: "Up to 120°C" },
+    { label: "Desiccant Rotor", value: "Swedish Industrial Grade" },
+    { label: "Heating Efficiency", value: "92% (PTC Ceramic Heater)" },
+    { label: "Control System", value: "SCR + PT100 Military Grade" },
+    { label: "Electrical Standards", value: "ABB, OMRON, Schneider" },
+    { label: "Certifications", value: "ISO9000, CE, CCC" },
   ];
 
   const problems = [
     {
-      problem: "Condensation & Water Damage",
-      solution: "Remove excess moisture to prevent surface condensation, water damage, and structural issues.",
+      problem: "Low Temperature Failure",
+      solution: "Desiccant rotor technology operates reliably at –20°C where compressor-based systems freeze and fail.",
     },
     {
-      problem: "Product Deterioration",
-      solution: "Protect hygroscopic materials, pharmaceuticals, and food products from moisture absorption.",
+      problem: "Ultra-Low Humidity Requirements",
+      solution: "Achieves very low RH levels (<20%) essential for lithium battery, pharmaceutical, and semiconductor manufacturing.",
     },
     {
-      problem: "Corrosion & Rust",
-      solution: "Eliminate humidity-accelerated oxidation of metals, equipment, and infrastructure.",
+      problem: "Continuous Industrial Duty",
+      solution: "No compressor cycling means stable, uninterrupted operation for 24/7 industrial processes and clean rooms.",
     },
     {
-      problem: "Mold & Odors",
-      solution: "Control humidity below 60% RH to prevent microbial growth and musty odors.",
+      problem: "Precise Process Control",
+      solution: "Military-grade SCR controller and PT100 sensor provide exact humidity control for critical applications.",
     },
   ];
 
@@ -153,10 +152,10 @@ export default function DehumidificationPage() {
           </Link>
           <div className="max-w-3xl">
             <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 tracking-tight">
-              Dehumidification Systems
+              Industrial Desiccant Rotor Dehumidification
             </h1>
             <p className="text-xl text-white/75">
-              Precision humidity control solutions for moisture-sensitive environments, protecting products, equipment, and facilities from the damaging effects of excess humidity.
+              Industrial rotary desiccant dehumidifiers with Swedish rotor technology. Engineered for low temperature operation, ultra-low humidity control, and continuous industrial duty in the most demanding environments.
             </p>
           </div>
         </div>
@@ -168,23 +167,36 @@ export default function DehumidificationPage() {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
               <h2 className="text-4xl font-bold text-gray-900 mb-6 tracking-tight">
-                Control Moisture, Protect Assets
+                Where Compressor Systems Fail, Desiccant Rotors Excel
               </h2>
               <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
                 <p>
-                  Excess humidity causes corrosion, mold growth, product degradation, and condensation damage. Proper dehumidification is essential for protecting equipment, inventory, and building infrastructure.
+                  Our industrial desiccant rotor systems use Swedish wheel technology — designed specifically for applications requiring low temperature operation (–20°C to +60°C), ultra-low humidity levels, and continuous industrial duty.
                 </p>
                 <p>
-                  We provide complete dehumidification solutions using refrigerant and desiccant technologies, engineered to maintain precise humidity levels in storage facilities, manufacturing plants, archives, and specialty applications.
+                  Unlike refrigerant-based dehumidifiers that freeze below 5°C and cannot achieve very low RH, desiccant rotor systems use adsorption and heated regeneration to deliver stable performance in pharmaceutical manufacturing, lithium battery dry rooms, electronics fabrication, and military installations.
                 </p>
                 <p>
-                  From small commercial units to large industrial systems, our dehumidifiers deliver reliable moisture control with energy-efficient operation and intelligent monitoring for critical environments.
+                  With military-grade SCR temperature control, PTC ceramic heaters at 92% efficiency, and premium ABB/OMRON/Schneider components, these systems are built for precision, reliability, and integration into critical industrial processes.
                 </p>
               </div>
             </div>
-            <div className="relative h-96 bg-gray-200 rounded-2xl overflow-hidden">
-              <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-blue-100 to-gray-100">
-                <div className="text-8xl opacity-20">💧</div>
+            <div className="grid grid-cols-1 gap-6">
+              <div className="relative h-64 bg-gray-200 rounded-2xl overflow-hidden">
+                <Image
+                  src="/products/Dehumidifier1.png"
+                  alt="Industrial Desiccant Rotor Dehumidifier"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="relative h-64 bg-gray-200 rounded-2xl overflow-hidden">
+                <Image
+                  src="/products/Dehumidifier2.png"
+                  alt="Industrial Desiccant Dehumidifier Installation"
+                  fill
+                  className="object-cover"
+                />
               </div>
             </div>
           </div>
@@ -196,10 +208,10 @@ export default function DehumidificationPage() {
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-14">
             <h2 className="text-4xl font-bold text-gray-900 mb-4 tracking-tight">
-              Advanced Humidity Control
+              Industrial Engineering Features
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Engineered for precision and reliability
+              Certified ISO9000, CE, CCC — Built for pharmaceutical, military, and critical manufacturing
             </p>
           </div>
 
@@ -220,15 +232,19 @@ export default function DehumidificationPage() {
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-14">
             <h2 className="text-4xl font-bold text-gray-900 mb-4 tracking-tight">
-              Dehumidification Technologies
+              GZ Series Model Range
             </h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              From compact laboratory units to large-scale industrial systems
+            </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
             {systemTypes.map((type, idx) => (
               <div key={idx} className="bg-gray-50 rounded-2xl p-8 border border-gray-200">
                 <h3 className="text-2xl font-bold text-gray-900 mb-2">{type.title}</h3>
-                <p className="text-blue-600 font-semibold mb-4">{type.capacity}</p>
+                <p className="text-blue-600 font-semibold mb-1">{type.capacity}</p>
+                <p className="text-sm text-gray-500 mb-4">{type.models}</p>
                 <p className="text-gray-600 mb-6 leading-relaxed">{type.description}</p>
                 <ul className="space-y-2">
                   {type.features.map((feature, fidx) => (
@@ -249,8 +265,11 @@ export default function DehumidificationPage() {
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-14">
             <h2 className="text-4xl font-bold text-gray-900 mb-4 tracking-tight">
-              Applications
+              Critical Industrial Applications
             </h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              Proven in pharmaceutical, biotechnology, lithium battery, and defense sectors
+            </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -269,7 +288,7 @@ export default function DehumidificationPage() {
       <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center tracking-tight">
-            Humidity Problems We Solve
+            Why Desiccant Rotor vs. Compressor Systems
           </h2>
           <div className="grid md:grid-cols-2 gap-6">
             {problems.map((item, idx) => (
@@ -288,12 +307,15 @@ export default function DehumidificationPage() {
           <h2 className="text-4xl font-bold text-gray-900 mb-8 tracking-tight text-center">
             Technical Specifications
           </h2>
+          <p className="text-center text-gray-600 mb-8">
+            Swedish Desiccant Rotor Technology — Industrial Grade Systems
+          </p>
           <div className="bg-white rounded-2xl p-8">
             <div className="space-y-4">
               {specifications.map((spec, idx) => (
                 <div key={idx} className="flex justify-between items-center py-4 border-b border-gray-200 last:border-0">
                   <span className="font-semibold text-gray-900">{spec.label}</span>
-                  <span className="text-gray-600">{spec.value}</span>
+                  <span className="text-gray-600 text-right">{spec.value}</span>
                 </div>
               ))}
             </div>
@@ -305,16 +327,16 @@ export default function DehumidificationPage() {
       <section className="py-20 bg-gradient-to-br from-blue-900 to-slate-950">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 tracking-tight">
-            Need Humidity Control?
+            Need Industrial Dehumidification?
           </h2>
           <p className="text-xl text-white/80 mb-10 leading-relaxed">
-            Our humidity control specialists will design the optimal dehumidification solution for your facility.
+            Our engineers will specify the optimal desiccant rotor system for your pharmaceutical, lithium battery, electronics, or critical facility application.
           </p>
           <Link
             href="/quote"
             className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold bg-white text-blue-900 hover:bg-gray-100 rounded-xl transition-colors shadow-lg"
           >
-            Request Dehumidification Quote
+            Request Technical Consultation
           </Link>
         </div>
       </section>

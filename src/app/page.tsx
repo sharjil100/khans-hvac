@@ -117,42 +117,42 @@ export default function HomePage() {
         {/* Pattern on RIGHT half only (keeps it premium, not noisy) */}
         <div className="pointer-events-none absolute inset-y-0 right-0 w-1/2 opacity-[0.035] [background-image:radial-gradient(circle_at_1px_1px,white_1px,transparent_0)] [background-size:26px_26px]" />
 
-        <div className="relative max-w-6xl mx-auto px-6 pt-40 lg:pt-36 pb-16">
-          <div className="grid lg:grid-cols-12 gap-12 items-center relative z-10">
+        <div className="relative max-w-6xl mx-auto px-4 md:px-6 pt-28 md:pt-36 lg:pt-40 pb-12 md:pb-16">
+          <div className="grid lg:grid-cols-12 gap-8 md:gap-12 items-center relative z-10">
             {/* Left */}
-            <div className="lg:col-span-7 lg:col-start-1">
+            <div className="lg:col-span-7 lg:col-start-1 text-center lg:text-left flex flex-col items-center lg:items-start">
               <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-xs font-medium tracking-widest text-white/70 uppercase">
                 Industrial HVAC Excellence
               </div>
 
-              <h1 className="mt-7 text-5xl md:text-6xl lg:text-6xl font-semibold leading-[1.05] tracking-tight text-white">
+              <h1 className="mt-5 md:mt-7 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold leading-[1.05] tracking-tight text-white">
                 Engineering <br />
                 Climate Control Solutions
               </h1>
 
-              <p className="mt-6 max-w-2xl text-lg md:text-xl leading-relaxed text-white/75">
+              <p className="mt-4 md:mt-6 max-w-2xl text-base md:text-lg lg:text-xl leading-relaxed text-white/75">
                 End-to-End HVAC systems for industrial and commercial facilities.
                 From design to commissioning, we deliver precision climate
                 control that powers your operations.
               </p>
 
-              <div className="mt-9 flex flex-wrap gap-4">
+              <div className="mt-6 md:mt-9 flex flex-col sm:flex-row gap-3 md:gap-4 w-full sm:w-auto">
                 <Link
                   href="#contact"
-                  className="inline-flex items-center justify-center rounded-xl bg-blue-600 px-7 py-3.5 text-sm font-semibold text-white hover:bg-blue-500 transition-colors shadow-lg shadow-blue-600/15"
+                  className="inline-flex items-center justify-center rounded-xl bg-blue-600 px-7 py-3.5 text-sm font-semibold text-white hover:bg-blue-500 transition-colors shadow-lg shadow-blue-600/15 w-full sm:w-auto"
                 >
                   Request Consultation
                 </Link>
                 <Link
                   href="#services"
-                  className="inline-flex items-center justify-center rounded-xl border border-white/15 bg-white/5 px-7 py-3.5 text-sm font-semibold text-white hover:bg-white/10 transition-colors"
+                  className="inline-flex items-center justify-center rounded-xl border border-white/15 bg-white/5 px-7 py-3.5 text-sm font-semibold text-white hover:bg-white/10 transition-colors w-full sm:w-auto"
                 >
                   Explore Services
                 </Link>
               </div>
 
               {/* Small credibility row (keeps left column “engineer-grade”) */}
-              <div className="mt-10 flex flex-wrap items-center gap-x-6 gap-y-3 text-sm text-white/60">
+              <div className="mt-10 flex flex-wrap items-center justify-center lg:justify-start gap-x-6 gap-y-3 text-sm text-white/60">
                 <div className="inline-flex items-center gap-2">
                   <span className="h-1.5 w-1.5 rounded-full bg-blue-400/80" />
                   Design • Supply • Installation
@@ -591,7 +591,7 @@ export default function HomePage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link
-                  href="#"
+                  href="/quote"
                   className="inline-flex items-center justify-center px-8 py-3.5 text-sm font-semibold bg-white text-blue-700 hover:bg-gray-100 rounded-xl transition-colors shadow-lg"
                 >
                   Schedule Consultation

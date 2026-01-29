@@ -22,33 +22,35 @@ export function Navbar() {
   { name: "Solutions", href: "/solutions" },
   { name: "Industries", href: "/#industries" },
   { name: "Projects", href: "/projects" },
+  { name: "Team", href: "/team" },
 ];
 
   return (
     <nav
       className={`fixed w-full z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-white/90 backdrop-blur-xl border-b border-black/10 shadow-lg py-3"
-          : "bg-white/5 backdrop-blur-xl border-b border-white/10 shadow-[0_1px_0_rgba(255,255,255,0.06)] py-3"
+          ? "bg-white/90 backdrop-blur-xl border-b border-black/10 shadow-lg py-2 md:py-3"
+          : "bg-white/5 backdrop-blur-xl border-b border-white/10 shadow-[0_1px_0_rgba(255,255,255,0.06)] py-2 md:py-3"
       }`}
     >
-      <div className="max-w-6xl mx-auto px-6">
-        <div className="flex items-center justify-between">
+      <div className="max-w-6xl mx-auto px-4 md:px-6">
+        <div className="flex items-center justify-between gap-3">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-3">
+          <Link href="/" className="flex items-center gap-1.5 md:gap-2 lg:gap-3 flex-shrink-0 lg:flex-1 lg:max-w-none max-w-[70%]">
             <Image
               src="/logo.svg"
               alt="Khan's HVAC Logo"
-              width={60}
-              height={60}
-              className="object-contain"
+              width={30}
+              height={30}
+              className="object-contain flex-shrink-0 md:w-[45px] md:h-[45px] lg:w-[60px] lg:h-[60px]"
             />
-            <div className="flex flex-col">
-              <span className={`font-bold text-xl tracking-tight ${scrolled ? 'text-gray-900' : 'text-white'}`}>
-                KHAN'S Authentic HVAC Systems
+            <div className="flex flex-col min-w-0 overflow-hidden flex-1">
+              <span className={`font-bold text-[11px] sm:text-xs md:text-sm lg:text-base xl:text-xl tracking-tight leading-tight truncate ${scrolled ? 'text-gray-900' : 'text-white'}`}>
+                <span className="sm:hidden">KHAN'S HVAC</span>
+                <span className="hidden sm:inline whitespace-nowrap">KHAN'S Authentic HVAC Systems</span>
               </span>
-              <span className={`text-xs tracking-wider ${scrolled ? "text-gray-600" : "text-white/80"}`}>
-                Complete Air-Conditioning Solution
+              <span className={`hidden md:block text-[8px] md:text-[9px] lg:text-xs tracking-wider leading-tight whitespace-nowrap ${scrolled ? "text-gray-600" : "text-white/80"}`}>
+                Complete Air-Conditioning
               </span>
             </div>
           </Link>
@@ -83,7 +85,7 @@ export function Navbar() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="lg:hidden p-2"
+            className={`lg:hidden p-2 flex-shrink-0 rounded-md transition-colors ${scrolled ? 'hover:bg-gray-100' : 'bg-white/10 hover:bg-white/20'}`}
             aria-label="Toggle menu"
           >
             <div className="w-6 h-5 flex flex-col justify-between">

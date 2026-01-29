@@ -136,9 +136,12 @@ export default function IndustrialHVACPage() {
               </div>
             </div>
             <div className="relative h-96 bg-gray-200 rounded-2xl overflow-hidden">
-              <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-blue-100 to-gray-100">
-                <div className="text-8xl opacity-20">🏭</div>
-              </div>
+              <Image
+                src="/products/industrial_hvac1.png"
+                alt="Industrial HVAC System"
+                fill
+                className="object-cover"
+              />
             </div>
           </div>
         </div>
