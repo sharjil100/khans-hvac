@@ -17,6 +17,7 @@ export default function HomePage() {
     { name: "Natore Tower", logo: null },
     { name: "Suvastu Arcade", logo: null },
     { name: "Hotel Sarina", logo: "/logos/Hotel Sarina.png" },
+    { name: "Aristopharma Ltd", logo: "/logos/Aristopharma.png" },
     { name: "Biogen Pharmaceuticals Ltd", logo: "/logos/Biogen.png" },
     { name: "Maxfair & Company Ltd", logo: "/logos/Maxfair.png" },
     { name: "Experience Group BD", logo: "/logos/Experience Group.png" },
