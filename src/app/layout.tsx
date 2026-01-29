@@ -6,7 +6,7 @@ export const metadata = {
   title: "Khan's HVAC Solutions | Industrial & Commercial HVAC Systems",
   description: "Leading provider of industrial HVAC solutions, clean room systems, chillers, and end-to-end HVAC services. Expert design, installation, and commissioning.",
   icons: {
-    icon: "/favicon.png",
+    icon: "/Favicon.png",
   },
 };
 
