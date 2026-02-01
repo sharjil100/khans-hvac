@@ -114,12 +114,11 @@ export default function ProjectsPage() {
       scope: "Clean Room HVAC (Class 10,000), AHU Systems, Dehumidification, Temperature & Humidity Control",
       year: "2026",
       category: "Pharmaceutical",
-      thumbnail: "/Aristopharma/WhatsApp Image 2026-01-26 at 3.51.02 PM.jpeg",
+      thumbnail: "/projects/Aristopharma1.jpeg",
       images: [
-        "/Aristopharma/WhatsApp Image 2026-01-26 at 3.51.02 PM.jpeg",
-        "/Aristopharma/WhatsApp Image 2026-01-26 at 3.51.06 PM (1).jpeg",
-        "/Aristopharma/WhatsApp Image 2026-01-26 at 3.51.06 PM (2).jpeg",
-        "/Aristopharma/WhatsApp Image 2026-01-26 at 3.51.26 PM (1).jpeg",
+        "/projects/Aristopharma1.jpeg",
+        "/projects/Aristopharma2.jpeg",
+        "/projects/Aristopharma3.jpeg",
       ],
     },
     {
