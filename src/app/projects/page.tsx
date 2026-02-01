@@ -3,7 +3,104 @@
 import Image from "next/image";
 import { useState } from "react";
 
-function ProjectCard({ project }: { project: any }) {
+interface LightboxProps {
+  images: string[];
+  currentIndex: number;
+  onClose: () => void;
+  projectTitle: string;
+}
+
+function Lightbox({ images, currentIndex, onClose, projectTitle }: LightboxProps) {
+  const [activeIndex, setActiveIndex] = useState(currentIndex);
+
+  const goToPrevious = () => {
+    setActiveIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
+  };
+
+  const goToNext = () => {
+    setActiveIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
+  };
+
+  const handleBackdropClick = (e: React.MouseEvent) => {
+    if (e.target === e.currentTarget) {
+      onClose();
+    }
+  };
+
+  return (
+    <div
+      className="fixed inset-0 z-50 bg-black/95 flex items-center justify-center p-4"
+      onClick={handleBackdropClick}
+    >
+      {/* Close button */}
+      <button
+        onClick={onClose}
+        className="absolute top-4 right-4 text-white/70 hover:text-white text-4xl font-light w-12 h-12 flex items-center justify-center hover:bg-white/10 rounded-full transition-colors"
+        aria-label="Close"
+      >
+        ×
+      </button>
+
+      {/* Previous button */}
+      {images.length > 1 && (
+        <button
+          onClick={goToPrevious}
+          className="absolute left-4 text-white/70 hover:text-white text-4xl font-light w-12 h-12 flex items-center justify-center hover:bg-white/10 rounded-full transition-colors"
+          aria-label="Previous image"
+        >
+          ‹
+        </button>
+      )}
+
+      {/* Image */}
+      <div className="relative max-w-7xl max-h-[90vh] w-full h-full flex items-center justify-center">
+        <div className="relative w-full h-full">
+          <Image
+            src={images[activeIndex]}
+            alt={`${projectTitle} - Image ${activeIndex + 1}`}
+            fill
+            className="object-contain"
+            priority
+          />
+        </div>
+      </div>
+
+      {/* Next button */}
+      {images.length > 1 && (
+        <button
+          onClick={goToNext}
+          className="absolute right-4 text-white/70 hover:text-white text-4xl font-light w-12 h-12 flex items-center justify-center hover:bg-white/10 rounded-full transition-colors"
+          aria-label="Next image"
+        >
+          ›
+        </button>
+      )}
+
+      {/* Image counter and dots */}
+      {images.length > 1 && (
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center gap-4">
+          <div className="text-white/70 text-sm">
+            {activeIndex + 1} / {images.length}
+          </div>
+          <div className="flex gap-2">
+            {images.map((_, idx) => (
+              <button
+                key={idx}
+                onClick={() => setActiveIndex(idx)}
+                className={`w-2 h-2 rounded-full transition-all ${
+                  idx === activeIndex ? 'bg-white w-8' : 'bg-white/40 hover:bg-white/60'
+                }`}
+                aria-label={`Go to image ${idx + 1}`}
+              />
+            ))}
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
+
+function ProjectCard({ project, onImageClick }: { project: any; onImageClick: (index: number) => void }) {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
 
@@ -16,7 +113,10 @@ function ProjectCard({ project }: { project: any }) {
         setCurrentImageIndex(0);
       }}
     >
-      <div className="h-64 bg-gradient-to-br from-blue-100 to-gray-100 relative overflow-hidden">
+      <div 
+        className="h-64 bg-gradient-to-br from-blue-100 to-gray-100 relative overflow-hidden cursor-pointer"
+        onClick={() => onImageClick(currentImageIndex)}
+      >
         <Image
           src={isHovered && project.images[currentImageIndex] ? project.images[currentImageIndex] : project.thumbnail}
           alt={project.title}
@@ -76,6 +176,18 @@ function ProjectCard({ project }: { project: any }) {
 }
 
 export default function ProjectsPage() {
+  const [lightboxOpen, setLightboxOpen] = useState(false);
+  const [lightboxImages, setLightboxImages] = useState<string[]>([]);
+  const [lightboxIndex, setLightboxIndex] = useState(0);
+  const [lightboxTitle, setLightboxTitle] = useState("");
+
+  const openLightbox = (project: any, imageIndex: number) => {
+    setLightboxImages(project.images);
+    setLightboxIndex(imageIndex);
+    setLightboxTitle(project.title);
+    setLightboxOpen(true);
+  };
+
   const projects = [
     {
       title: "Feni Garden City",
@@ -147,6 +259,15 @@ export default function ProjectsPage() {
 
   return (
     <>
+      {lightboxOpen && (
+        <Lightbox
+          images={lightboxImages}
+          currentIndex={lightboxIndex}
+          onClose={() => setLightboxOpen(false)}
+          projectTitle={lightboxTitle}
+        />
+      )}
+
       {/* Hero */}
       <section className="relative bg-slate-950 pt-32 pb-16">
         <div className="max-w-6xl mx-auto px-6">
@@ -193,7 +314,7 @@ export default function ProjectsPage() {
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map((project, idx) => (
-              <ProjectCard key={idx} project={project} />
+              <ProjectCard key={idx} project={project} onImageClick={(imageIndex) => openLightbox(project, imageIndex)} />
             ))}
           </div>
         </div>
